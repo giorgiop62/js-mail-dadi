@@ -3,16 +3,23 @@ Chiedi all’utente la sua email,
 controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull’esito del contro*/
 
-const lista = document.getElementById('outuput');
+const esito = document.getElementById('outuput');
 
-const email =['ciccio', 'paco' ,'red'];
+const email =['ciccio@gmaail.com', 'paco@outlook.com' ,'red@hgmail.com'];
 
-const utenteX = prompt('inserisci la tua email');
+const utente = prompt('inserisci la tua email');
+
+let trovato = false;
 
 for(i = 0; i<email.length; i++){
-  if(email[i] == utenteX){
-    
-    console.log('l utente è registrato');
-  }else 
-  console.log('utente non registrato');
+  if(email[i] == utente){
+    trovato = true;
+  }
+}
+
+
+if (trovato == true) {
+  console.log('trovato');
+} else {
+  console.log('NON TROVATO');
 }
