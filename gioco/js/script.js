@@ -2,9 +2,23 @@
 Stabilire il vincitore, in base a chi fa il punteggio più alto.*/
 
 
-const vincitore = 0;
-var utente = Math.round(Math.random()*5+1);
-var computer = Math.round(Math.random()*5+1);
-console.log(utente);
-console.log(computer);
+
+var dado1 = Math.round(Math.random()*5+1);
+
+console.log(dado1);
+
+var dado2 = Math.round(Math.random()*5+1);
+
+console.log(dado2);
+
+let vincitore = false;
+
+if(dado1 > dado2){
+  vincitore = true;
+  console.log('Ha vinto Utente');
+}else{
+  vincitore = false;
+  console.log('Ha vinto il PC');
+
+}
 
