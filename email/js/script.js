@@ -11,7 +11,7 @@ const utente = prompt('inserisci la tua email');
 
 let trovato = false;
 
-for(i = 0; i<email.length; i++){
+for( let i = 0; i<email.length; i++){
   if(email[i] == utente){
     trovato = true;
   }
